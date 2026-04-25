@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | CBB — Camara, Botelho e Borges Advogados</title>
+  <meta name="description" content="Entre em contato com o CBB Advogados. Atendimento em Barra do Piraí, RJ. WhatsApp, e-mail e formulário online." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="img/logo-horizontal-branco.png" alt="CBB Advogados" />
+      </a>
+      <ul class="navbar__menu">
+        <li><a href="index.html"     class="navbar__link">Início</a></li>
+        <li><a href="advogados.html" class="navbar__link">Advogados</a></li>
+        <li><a href="artigos.html"   class="navbar__link">Artigos</a></li>
+        <li><a href="contato.html"   class="navbar__link active">Contato</a></li>
+        <li class="navbar__cta"><a href="https://wa.me/5524XXXXXXXX" class="btn btn--outline-white">💬 WhatsApp</a></li>
+      </ul>
+      <button class="navbar__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <span class="page-header__label">Fale conosco</span>
+      <h1 class="page-header__title">Vamos resolver<br><strong>o seu caso.</strong></h1>
+      <p class="page-header__subtitle">
+        A primeira conversa é gratuita. Nos conte o que está acontecendo
+        e nossa equipe indica o melhor caminho.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- INFO -->
+        <div>
+          <span class="label">Canais de atendimento</span>
+          <h2 style="margin-bottom: 14px; font-weight: 300;">Como nos <strong>encontrar</strong></h2>
+          <div class="rule"></div>
+          <p style="color: var(--gray-text); margin-bottom: 40px;">
+            Atendemos presencialmente em Barra do Piraí e online para toda
+            a região do Vale do Paraíba Fluminense.
+          </p>
+
+          <div class="contact-info__item">
+            <div>
+              <div class="contact-info__label">Endereço</div>
+              <div class="contact-info__value">
+                [Rua, Número, Sala]<br>
+                Centro — Barra do Piraí, RJ<br>
+                CEP: XXXXX-XXX
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div>
+              <div class="contact-info__label">WhatsApp / Telefone</div>
+              <div class="contact-info__value">
+                <a href="https://wa.me/5524XXXXXXXX">(24) XXXXX-XXXX</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div>
+              <div class="contact-info__label">E-mail</div>
+              <div class="contact-info__value">
+                <a href="mailto:contato@cbbadvogados.adv.br">contato@cbbadvogados.adv.br</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div>
+              <div class="contact-info__label">Horário de atendimento</div>
+              <div class="contact-info__value">
+                Segunda a Sexta: 9h às 18h<br>
+                Sábados: 9h às 12h (com agendamento)
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5524XXXXXXXX"
+             style="display:inline-flex;align-items:center;gap:10px;background:#25d366;color:#fff;padding:14px 28px;font-family:var(--font-sans);font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-top:24px;transition:var(--transition);"
+             onmouseover="this.style.background='#1ebe5d'" onmouseout="this.style.background='#25d366'">
+            💬 Falar pelo WhatsApp agora
+          </a>
+        </div>
+
+        <!-- FORM -->
+        <div>
+          <span class="label">Formulário</span>
+          <h2 style="margin-bottom: 14px; font-weight: 300;">Envie sua <strong>mensagem</strong></h2>
+          <div class="rule"></div>
+          <p style="color: var(--gray-text); margin-bottom: 32px;">
+            Preencha abaixo e retornamos em até 1 dia útil.
+          </p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome completo *</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone / WhatsApp *</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(24) XXXXX-XXXX" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="area">Área de interesse *</label>
+              <select id="area" name="area" required>
+                <option value="" disabled selected>Selecione uma área</option>
+                <option>Direito Civil</option>
+                <option>Direito do Consumidor</option>
+                <option>Direito de Família</option>
+                <option>Sucessões / Inventário</option>
+                <option>Previdência Social / INSS</option>
+                <option>Direito Trabalhista</option>
+                <option>Direito Imobiliário</option>
+                <option>Outro assunto</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Descreva brevemente sua situação *</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Conte-nos o que está acontecendo. Quanto mais detalhes, melhor poderemos ajudá-lo." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label style="flex-direction:row;align-items:flex-start;gap:10px;cursor:pointer;text-transform:none;letter-spacing:0;font-size:0.8rem;font-weight:400;color:var(--gray-text);line-height:1.5;">
+                <input type="checkbox" required style="width:auto;margin-top:3px;flex-shrink:0;" />
+                Concordo com o tratamento dos meus dados para fins de contato, conforme a LGPD.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--navy" style="width:100%;justify-content:center;font-size:0.8rem;padding:15px;">
+              Enviar mensagem
+            </button>
+            <p style="font-size:0.7rem;color:var(--gray-text);text-align:center;margin-top:10px;">
+              🔒 Dados tratados com sigilo profissional e conforme a LGPD.
+            </p>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            ✅ Mensagem enviada com sucesso! Nossa equipe entrará em contato em breve.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MAPA -->
+      <div class="map-wrapper">
+        <!--
+          Para ativar o Google Maps, substitua o bloco abaixo por:
+          <iframe
+            src="https://www.google.com/maps/embed?pb=SEU_LINK_AQUI"
+            width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+
+          Como gerar: maps.google.com > seu endereço > Compartilhar > Incorporar mapa > copie o src.
+        -->
+        <div class="map-placeholder">
+          <span style="font-size:2rem;opacity:0.15;">🗺️</span>
+          <span>Google Maps — substitua pelo iframe do seu endereço real</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-strip">
+    <div class="container">
+      <div class="cta-strip__inner">
+        <div class="cta-strip__text">
+          <h2>Atendimento urgente?</h2>
+          <p>Para situações que não podem esperar, o WhatsApp é o canal mais rápido.</p>
+        </div>
+        <div class="cta-strip__actions">
+          <a href="https://wa.me/5524XXXXXXXX" class="btn btn--navy" style="background:rgba(255,255,255,0.95);color:var(--navy);">💬 WhatsApp agora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <img src="img/logo-horizontal-branco.png" alt="CBB Advogados" class="footer__logo" />
+          <p class="footer__tagline">Advocacia ética e comprometida em Barra do Piraí e região.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Navegação</div>
+          <ul class="footer__links">
+            <li><a href="index.html"     class="footer__link">Início</a></li>
+            <li><a href="advogados.html" class="footer__link">Advogados</a></li>
+            <li><a href="artigos.html"   class="footer__link">Artigos</a></li>
+            <li><a href="contato.html"   class="footer__link">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Áreas</div>
+          <ul class="footer__links">
+            <li><a href="contato.html" class="footer__link">Civil &amp; Consumidor</a></li>
+            <li><a href="contato.html" class="footer__link">Família &amp; Sucessões</a></li>
+            <li><a href="contato.html" class="footer__link">Previdência Social</a></li>
+            <li><a href="contato.html" class="footer__link">Trabalhista</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Contato</div>
+          <div class="footer__contact-item">📍 [Endereço] — Barra do Piraí/RJ</div>
+          <div class="footer__contact-item">📞 (24) XXXXX-XXXX</div>
+          <div class="footer__contact-item">✉️ contato@cbbadvogados.adv.br</div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Camara, Botelho e Borges Advogados. Todos os direitos reservados.</span>
+        <span>OAB/RJ 245.719 · 249.459 · 265.426 | Caráter informativo.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5524XXXXXXXX" class="whatsapp-float">💬</a>
+  <script src="script.js"></script>
+</body>
+</html>
